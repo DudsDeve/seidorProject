@@ -1,0 +1,23 @@
+[
+    {   "id":1,
+        "nome": "Ana Silva",
+        "cpf": "123.456.789-00",
+        "salario": 5000,
+        "desconto": 300,
+        "dependentes": 2,
+        "descontoIRPF": 278,
+        "atualizadoEm": "13/04/2025",
+        "criadoEm": "10/02/2025"
+      },
+      {
+        "id":2,
+        "nome": "João Souza",
+        "cpf": "987.654.321-00",
+        "salario": 3500,
+        "desconto": 200,
+        "dependentes": 0,
+        "descontoIRPF": 145,
+        "atualizadoEm": "11/04/2025",
+        "criadoEm": "05/01/2025"
+      }
+]

@@ -1,13 +1,10 @@
-import SeidorLogo from "@assets/images/seidorLogo.png";
-import { Container } from "./styles";
+import { EmployessTable } from "./components/EmployeesTable";
+import { MainContainer } from "./styles";
+
 export function Home() {
   return (
-    <Container>
-      <img src={SeidorLogo} alt="Seidor Logo" />
-      <div>
-        <img />
-        <h1>Seidor</h1>
-      </div>
-    </Container>
+    <MainContainer>
+      <EmployessTable />
+    </MainContainer>
   );
 }

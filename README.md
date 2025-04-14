@@ -1,54 +1,71 @@
-# React + TypeScript + Vite
+# Seidor Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 1 - Desenvolver um sistema de CRUD no front end
 
-Currently, two official plugins are available:
+# 2 - Adicionar um filtro por CPF e NOME
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# 3 - Calcular o valor de salário base para cálculo do IR, o desconto IRRF e apresentar essas
 
-## Expanding the ESLint configuration
+informações na listagem dos funcionários cadastrados.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Precisamos desenvolver um sistema web que permita-nos gerenciar nossos funcionários e o
+cálculo de Imposto de Renda Retido na Fonte (IRRF) de cada um deles. Para isso construiremos
+uma aplicação com as seguintes funcionalidades:
+• Cadastrar um novo Funcionário a partir dos campos manuais:
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+▪ Nome
+▪ CPF
+▪ Salário Bruto
+▪ Desconto da previdência
+▪ Número de dependentes
+• Atualizar um Funcionário cadastrado
+• Excluir um Funcionário cadastrado
+• Listar os Funcionário cadastrados com os campos:
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+▪ Nome
+▪ CPF
+▪ Salário
+▪ Desconto
+▪ Dependentes
+▪ Desconto IRPF
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+• Filtrar a lista de Funcionários cadastrados por Nome e CPF
+A cada novo funcionário cadastrado, com base nas informações inseridas, o sistema deve
+calcular o valor de salário base para cálculo do IR, o desconto IRRF e apresentar essas
+informações na listagem dos funcionários cadastrados.
+Salário Base IR = Salário bruto - Desconto da Previdência - Dedução por Dependente x
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+Quantidade de Dependentes
+
+Desconto IRRF = Salário Base IR x Alíquota - Parcela a Deduzir
+
+A tabela progressiva do IRRF que deve ser utilizada:
+Base de cálculo Alíquota Parcela a deduzir do IRPF
+Até 2.259,20 Isento R$ 0,00
+De R$ 2.259,21 até R$ 2.826,65 7,5% R$ 169,44
+De R$ 2.826,66 até R$ 3.751,05 15% R$ 381,44
+De R$ 3.751,06 até R$ 4.664,68 22,5% R$ 662,77
+Acima de R$ 4.664,68 27,5% R$ 896,00
+Dedução por dependente: R$ 189,59
+
+Para testes, também foi disponibilizado um arquivo JSON com alguns exemplos de funcionários.
+
+Teste Técnico Prático
+
+O que você deve entregar?
+• O código fonte da sua aplicação, as instruções de como executar e testar a sua
+aplicação. Deve ser entregue um link para um repositório git público (ex: Github,
+Bitbucket, Gitlab, etc).
+O que será avaliado?
+• Funcionalidades: sua aplicação cobre as funcionalidades que foram solicitadas?
+• Estrutura do código: Se o código foi bem escrito, se está organizado, se é fácil de ler
+(nomes de variáveis, funções, etc..).
+Observações:
+• É necessário que o teste seja desenvolvido utilizando o framework React.js.
+• É necessário utilizar o Redux ou Context para persistir os dados de funcionários
+• O prazo para resolução do teste é de 3 dias
+• Teste desenvolvido utilizando TypeScript e/ou RTL será um diferencial
+
+É importante que o projeto esteja funcional, mas não avaliaremos somente esse ponto no teste
+prático então mesmo que não consiga terminar a solução, envie-nos seu trabalho.
+Muito obrigado pelo seu tempo, participação e boa sorte!

@@ -13,6 +13,14 @@ export default defineConfig({
         replacement: path.resolve(__dirname, './src/assets/'),
       },
       {
+        find: '@database',
+        replacement: path.resolve(__dirname, './src/database/'),
+      },
+      {
+        find: '@layouts',
+        replacement: path.resolve(__dirname, './src/layouts/'),
+      },
+      {
         find: '@components',
         replacement: path.resolve(__dirname, './src/components/'),
       },
@@ -37,8 +45,8 @@ export default defineConfig({
         replacement: path.resolve(__dirname, './src/contexts/'),
       },
       {
-        find: '@routes',
-        replacement: path.resolve(__dirname, './src/routes/'),
+        find: '@router',
+        replacement: path.resolve(__dirname, './src/router/'),
       },
       {
         find: '@hooks',

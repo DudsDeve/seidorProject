@@ -1,12 +1,8 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
-
-export const Container = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-color: ${({ theme }) => theme.COLORS.BLUE_500};
-`
+export const MainContainer = styled.section`
+background: ${({ theme }) => theme.COLORS.GRAY_500};
+width: 100%;
+height: 100vh;`
 
 
