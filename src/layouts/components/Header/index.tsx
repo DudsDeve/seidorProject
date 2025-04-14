@@ -27,15 +27,15 @@ export function Header() {
             <span>Recursos Humanos</span>
           </PerfilName>
           <Button
-            width={pixelToRem(30)}
-            height={pixelToRem(30)}
-            border="none"
+            $width={pixelToRem(30)}
+            $height={pixelToRem(30)}
+            $border="none"
             onClick={() => {
               navigate(PATHS.HOME);
             }}
             icon={ExitIcon}
-            iconWidth={pixelToRem(30)}
-            iconHeight={pixelToRem(30)}
+            $iconWidth={pixelToRem(30)}
+            $iconHeight={pixelToRem(30)}
           />
         </PerfilContainer>
       </div>

@@ -1,11 +1,11 @@
 export interface EmployeeModel {
-    id: number
-nome: string
+  id: string
+  nome: string
   cpf: string
   salario: number
-  desconto: number
+  descontoPrevidencia?: number
   dependentes: number
-  descontoIRPF: number
+  descontoIRPF?: number
   atualizadoEm: string
   criadoEm: string
 }

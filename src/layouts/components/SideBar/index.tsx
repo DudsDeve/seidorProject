@@ -13,7 +13,7 @@ export function Sidebar() {
         </Link>
         <Link to={PATHS.NEW_EMPLOYEE}>
           <img src={NewEmployeeIcon} />
-          <span>Add colaborador</span>
+          <span>Addicionar colaborador</span>
         </Link>
       </ContentContainer>
     </MainContainer>

@@ -6,6 +6,10 @@
 
 # 3 - Calcular o valor de salário base para cálculo do IR, o desconto IRRF e apresentar essas
 
+# \*Não consegui achar o arquivo JSON dentro dos emails, então criei uma base, porém
+
+# não sei se está correta, isso pôde interferir nos calcúlos
+
 informações na listagem dos funcionários cadastrados.
 
 Precisamos desenvolver um sistema web que permita-nos gerenciar nossos funcionários e o
@@ -31,8 +35,11 @@ uma aplicação com as seguintes funcionalidades:
 
 • Filtrar a lista de Funcionários cadastrados por Nome e CPF
 A cada novo funcionário cadastrado, com base nas informações inseridas, o sistema deve
+
 calcular o valor de salário base para cálculo do IR, o desconto IRRF e apresentar essas
+
 informações na listagem dos funcionários cadastrados.
+
 Salário Base IR = Salário bruto - Desconto da Previdência - Dedução por Dependente x
 
 Quantidade de Dependentes
@@ -46,6 +53,7 @@ De R$ 2.259,21 até R$ 2.826,65 7,5% R$ 169,44
 De R$ 2.826,66 até R$ 3.751,05 15% R$ 381,44
 De R$ 3.751,06 até R$ 4.664,68 22,5% R$ 662,77
 Acima de R$ 4.664,68 27,5% R$ 896,00
+
 Dedução por dependente: R$ 189,59
 
 Para testes, também foi disponibilizado um arquivo JSON com alguns exemplos de funcionários.
