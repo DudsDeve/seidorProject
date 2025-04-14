@@ -22,7 +22,7 @@ export const ScrollBody = styled.div`
 export const TableRow = styled.tr`
   display: grid;
   grid-template-columns: 3fr 1.3fr 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr;
-  border-radius: 5px;
+  border-radius: 6px;
 `;
 
 export const Th = styled.th`
